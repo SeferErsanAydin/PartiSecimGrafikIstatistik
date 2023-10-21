@@ -38,11 +38,11 @@ namespace PartiSecimGrafikIstatistik
             SqlDataReader dr2 = cmd2.ExecuteReader();
             while (dr2.Read())
             {
-                chart1.Series["Partiler"].Points.AddXY("A Parti", dr2[0]);
-                chart1.Series["Partiler"].Points.AddXY("B Parti", dr2[1]);
-                chart1.Series["Partiler"].Points.AddXY("C Parti", dr2[2]);
-                chart1.Series["Partiler"].Points.AddXY("D Parti", dr2[3]);
-                chart1.Series["Partiler"].Points.AddXY("E Parti", dr2[4]);
+                chart1.Series["Partiler"].Points.AddXY("A Partisi", dr2[0]);
+                chart1.Series["Partiler"].Points.AddXY("B Partisi", dr2[1]);
+                chart1.Series["Partiler"].Points.AddXY("C Partisi", dr2[2]);
+                chart1.Series["Partiler"].Points.AddXY("D Partisi", dr2[3]);
+                chart1.Series["Partiler"].Points.AddXY("E Partisi", dr2[4]);
             }
             bgl.Close();
             CmbIlceler.SelectedIndex = 0;
